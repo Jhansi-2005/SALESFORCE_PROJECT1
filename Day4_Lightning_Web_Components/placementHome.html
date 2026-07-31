@@ -1,0 +1,71 @@
+<template>
+    <lightning-card title="Placement Portal" icon-name="standard:opportunity">
+
+        <div class="slds-p-around_medium">
+
+            <h1 class="title">
+                Welcome to Vishnu Placement Portal
+            </h1>
+
+            <p><strong>Today's Date:</strong> {todayDate}</p>
+
+            <br>
+
+            <h2>Student Details</h2>
+
+            <p>
+                <strong>Student Name:</strong> {studentName}
+            </p>
+
+            <p>
+                <strong>Roll Number:</strong> {rollNumber}
+            </p>
+
+            <p>
+                <strong>Department:</strong> {department}
+            </p>
+
+            <br>
+
+            <lightning-button
+                label="Show Welcome Message"
+                variant="brand"
+                onclick={showWelcomeMessage}>
+            </lightning-button>
+
+            <p class="message">
+                {welcomeMessage}
+            </p>
+
+            <br>
+
+            <p>
+                <strong>Status:</strong> {applicationStatus}
+            </p>
+
+            <lightning-button
+                label="Apply"
+                variant="success"
+                onclick={changeStatus}>
+            </lightning-button>
+
+            <br><br>
+
+            <h2>Placement Statistics</h2>
+
+            <p>
+                <strong>Number of Companies:</strong> 25
+            </p>
+
+            <p>
+                <strong>Number of Jobs:</strong> 63
+            </p>
+
+            <p>
+                <strong>Applications Submitted:</strong> 5
+            </p>
+
+        </div>
+
+    </lightning-card>
+</template>
